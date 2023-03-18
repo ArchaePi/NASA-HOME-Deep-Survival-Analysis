@@ -1,33 +1,56 @@
 # NASA Home Deep Survival Analysis <img src="https://drive.google.com/uc?export=view&id=1iVZTOw1rmUd97ngsiVQQr-sL1S9b6dIK" width="48" height="48">
 
+
 ***
+
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Datasets](#datasets)
-3. [Model Architecture](#model)
+1. [Overview](#overview)
+2. [Data](#data)
+3. [Methodology](#method)
 4. [Results](#results)
-5. [Collaborators](#collab)
+5. [Discussion and Conclusions](#disc-cons)
+6. [Resources and References](#res-ref)
+7. [Collaborators](#collab)
+
 
 ***
-<a name = "project-overview"></a>
-## Project Overview
 
 
-<a name = "datasets"></a>
-## Datasets
+<a name = "overview"></a>
+## Overview
+<br><br>
 
 
-<a name = "model"></a>
-## Model Architecture
+<a name = "data"></a>
+## Data
+<br><br>
+
+
+<a name = "method"></a>
+## Methodology
+<br><br>
 
 
 <a name = "results"></a>
-## Results 
+## Results
+<br><br>
+
+
+<a name = "disc-cons"></a>
+## Discussion and Conclusions
+<br><br>
+
+
+<a name = "res-ref"></a>
+## Resources and References
+<br><br>
 
 
 <a name = "collab"></a>
 ## Collaborators
 [Shakirah D. Cooper](https://github.com/ArchaePi) - MS Computational Biomedical Engineering @ Carnegie Mellon University
+<br><br>
+
 
 ***
