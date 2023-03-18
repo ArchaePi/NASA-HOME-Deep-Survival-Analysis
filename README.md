@@ -1,5 +1,5 @@
 # NASA Home Deep Survival Analysis <img src="https://drive.google.com/uc?export=view&id=1iVZTOw1rmUd97ngsiVQQr-sL1S9b6dIK" width="25" height="25">
-https://drive.google.com/file/d/1iVZTOw1rmUd97ngsiVQQr-sL1S9b6dIK/view?usp=share_link
+
 ***
 
 ## Table of Contents
