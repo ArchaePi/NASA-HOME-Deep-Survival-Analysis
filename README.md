@@ -37,21 +37,21 @@
 ## Overview
 <a name = "nasa-home"></a>
 ### What is NASA HOME?
-Habitats Optimized for Missions of Exploration (HOME) is a multi-university, multi-disciplinary Space Technology Research Institute (STRI) and university-led research project proposed by NASA. HOME was proposed for the purposes of developing optimal designs of Deep Space Habitats (DSH). A DSH requires the synthesis of reliability engineering, risk analysis, and a myriad of emergent technologies which enable the development of robust, autonomous, and self-dependent habitats. By optimizing the designs of DSH, we propagate ourselves towards a future where reliable, and safe habitats for long-term deep space exploration, can be a space ;) astronauts call home.
+<b>Habitats Optimized for Missions of Exploration (HOME)</b> is a multi-university, multi-disciplinary Space Technology Research Institute (STRI) and university-led research project proposed by NASA. HOME was proposed for the purposes of developing optimal designs of Deep Space Habitats (DSH). A DSH requires the synthesis of reliability engineering, risk analysis, and a myriad of emergent technologies which enable the development of robust, autonomous, and self-dependent habitats. By optimizing the designs of DSH, we propagate ourselves towards a future where reliable, and safe habitats for long-term deep space exploration, can be a space ;) astronauts call home.
 <br>
 
 <a name = "dsh"></a>
 ### What are Deep Space Habitats (DSH)?
-Deep Space Habitats (DSH) are a conceptualized habitat proposed by NASA. These habitats are intended to maintain an extended residence in deep space and provide a safe, self-dependent environment for human explorers during prolonged deep space missions. The term 'deep space' includes spaces which extend beyond low-Earth orbit (LEO) and cislunar space, onward to Mars and other unexplored regions of our solar system. DSHs can be simplified as consisting of the two following parts: deep space habitation systems and habitation modules.
+<b>Deep Space Habitats (DSH)</b> are a conceptualized habitat proposed by NASA. These habitats are intended to maintain an extended residence in deep space and provide a safe, self-dependent environment for human explorers during prolonged deep space missions. The term 'deep space' includes spaces which extend beyond low-Earth orbit (LEO) and cislunar space, onward to Mars and other unexplored regions of our solar system. DSHs can be simplified as consisting of the two following parts: deep space habitation systems and habitation modules.
 <br><br>
 <img src="https://drive.google.com/uc?export=view&id=16flpdqapmh1jcujg2csmyAEqBFnsk9hw" width="320" height="180">
 <br>
 A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Owner: NASA</b>
 
 #### Habitation Systems
-Deep space habitation systems are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
+<b>Deep space habitation systems</b> are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
 #### Habitation Modules
-Habitation Modules are the structures which house both the aforementioned habitation systems, and future human explorers. These modules require optimal and careful construction considering a module’s obligation to protect astronauts from extreme deep space conditions.
+<b>Habitation Modules</b> are the structures which house both the aforementioned habitation systems, and future human explorers. These modules require optimal and careful construction considering a module’s obligation to protect astronauts from extreme deep space conditions.
 <br>
 
 <a name = "dsa"></a>
