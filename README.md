@@ -43,8 +43,10 @@ Habitats Optimized for Missions of Exploration (HOME) is a multi-university, mul
 <a name = "dsh"></a>
 ### What are Deep Space Habitats (DSH)?
 Deep Space Habitats (DSH) are a conceptualized habitat proposed by NASA, capable of maintaining an extended residence in deep space and providing a safe, self-dependent environment for human explorers to endure prolonged deep space missions. Deep space includes spaces which extend beyond low-Earth orbit (LEO) and cislunar space, unto Mars and other unexplored regions of our Solar System. A DSH can be simplified as the two following parts: deep space habitation systems and habitation modules.
-<br>
+<br><br>
 <img src="https://drive.google.com/uc?export=view&id=16flpdqapmh1jcujg2csmyAEqBFnsk9hw" width="320" height="180">
+<br>
+A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Owner: NASA</b>
 
 #### Habitation Systems
 Deep space habitation systems are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, along with other elements intended to prolong the survival of both the DSH and its inhabitants during its residence in deep space. 
