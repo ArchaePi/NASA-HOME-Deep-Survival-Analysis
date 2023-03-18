@@ -37,7 +37,7 @@
 ## Overview
 <a name = "nasa-home"></a>
 ### What is NASA HOME?
-Habitats Optimized for Missions of Exploration (HOME) is a multi-university, multi-disciplinary Space Technology Research Institute (STRI) and university-led research project proposed by NASA for the purposes of developing optimal designs of Deep Space Habitats (DSH). A DSH requires the synthesis of reliability engineering, risk analysis, and a myriad of emergent technologies which enable the development of robust, autonomous, and self-dependent habitats for astronauts and long-term deep space exploration.
+Habitats Optimized for Missions of Exploration (HOME) is a multi-university, multi-disciplinary Space Technology Research Institute (STRI) and university-led research project proposed by NASA. HOME was proposed for the purposes of developing optimal designs of Deep Space Habitats (DSH). A DSH requires the synthesis of reliability engineering, risk analysis, and a myriad of emergent technologies which enable the development of robust, autonomous, and self-dependent habitats. By optimizing the designs of DSH, we propagate ourselves towards a future where reliable, and safe habitats for long-term deep space exploration, can be a space ;) astronauts call home.
 <br>
 
 <a name = "dsh"></a>
