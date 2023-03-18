@@ -13,7 +13,7 @@
    * [What is Deep Survival Analysis for Predictive Maintenance?](#dsa)
    * [CMU Specific NASA HOME Research Goals](#cmu)
 2. [Data](#data)
-   * [NASA's Lithium-Ion Batteries Dataset](#li-ion)
+   * [NASA's Li-ion Battery Aging Datasets](#li-ion)
 3. [Methodology](#method)
    * [Preprocessing](#pre-proc)
    * [Training](#train)
@@ -79,7 +79,7 @@ include link
 <a name = "data"></a>
 ## Data
 <a name = "li-ion"></a>
-### NASA's Lithium-Ion Batteries Dataset
+### NASA's Li-ion Battery Aging Datasets
 <br><br>
 
 
