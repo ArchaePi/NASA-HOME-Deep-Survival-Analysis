@@ -10,7 +10,7 @@
 1. [Overview](#overview)
    * [What is NASA HOME?](#nasa-home)
    * [What are Deep Space Habitats (DSH)?](#dsh)
-   * [What is Deep Survival Analysis?](#dsa)
+   * [What is Deep Survival Analysis for Predictive Maintenance?](#dsa)
    * [CMU Specific NASA HOME Research Goals](#cmu)
 2. [Data](#data)
    * [NASA's Lithium-Ion Batteries Dataset](#li-ion)
@@ -55,7 +55,14 @@ Habitation Modules are the structures which house both the aforementioned habita
 <br>
 
 <a name = "dsa"></a>
-### What is Deep Survival Analysis?
+### What is Deep Survival Analysis for Predictive Maintenance?
+#### Predictive Maintenance
+
+#### Failure Modes and Mechanisms
+
+#### Survival Analysis
+
+#### Deep Survival Analysis
 <br>
 
 <a name = "cmu"></a>
