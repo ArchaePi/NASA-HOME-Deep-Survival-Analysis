@@ -1,4 +1,4 @@
-# NASA Home Deep Survival Analysis <img src="https://drive.google.com/uc?export=view&id=1iVZTOw1rmUd97ngsiVQQr-sL1S9b6dIK" width="48" height="48">
+# <img src="https://drive.google.com/uc?export=view&id=1XoL0DKY9N63l-rIop8PnYnHXGRz_AOfx" width="100" height="100"> NASA Home Deep Survival Analysis
 <br>
 
 
