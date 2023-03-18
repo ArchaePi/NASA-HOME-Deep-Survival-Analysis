@@ -1,7 +1,9 @@
 # NASA Home Deep Survival Analysis <img src="https://drive.google.com/uc?export=view&id=1iVZTOw1rmUd97ngsiVQQr-sL1S9b6dIK" width="48" height="48">
+<br>
 
 
 ***
+<br>
 
 
 ## Table of Contents
@@ -14,7 +16,10 @@
 7. [Collaborators](#collab)
 
 
+<br>
+
 ***
+<br>
 
 
 <a name = "overview"></a>
