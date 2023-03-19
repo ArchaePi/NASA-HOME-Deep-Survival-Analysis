@@ -51,9 +51,9 @@
 A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Source: NASA</b>
 
 #### Habitation Systems
-<b>Deep space habitation systems</b> are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
+Deep space habitation systems are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
 #### Habitation Modules
-<b>Habitation Modules</b> are the structures which house both the aforementioned habitation systems, and future human explorers. These modules require optimal and careful construction considering a module’s obligation to protect astronauts from extreme deep space conditions.
+Habitation Modules are the structures which house both the aforementioned habitation systems, and future human explorers. These modules require optimal and careful construction considering a module’s obligation to protect astronauts from extreme deep space conditions.
 <br>
 
 <a name = "dsa"></a>
