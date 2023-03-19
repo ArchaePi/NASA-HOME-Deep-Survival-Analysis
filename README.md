@@ -120,11 +120,11 @@ An optimal, and self-dependent DSH requires early prediction of system shutdowns
 
 <a name = "res-ref"></a>
 ## Resources and References
-<br><br>
 * [Deep Space Habitats Overview](https://www.nasa.gov/deep-space-habitation/overview/)
 * [Habitats Optimized for Missions of Exploration (HOME)](https://www.nasa.gov/directorates/spacetech/strg/stri/stri_2018/Habitats_Optimized_for_Missions_of_Exploration_HOME/)
 * [HOME Website](https://homestri.ucdavis.edu/)
 * [NASA's Quad Chart](https://www.nasa.gov/sites/default/files/atoms/files/home_quad_chart.pdf)
+<br><br>
 
 
 
