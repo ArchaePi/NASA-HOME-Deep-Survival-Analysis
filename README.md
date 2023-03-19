@@ -38,6 +38,8 @@
 <a name = "nasa-home"></a>
 ### What is NASA HOME?
 <b>Habitats Optimized for Missions of Exploration (HOME)</b> is a multi-university, multi-disciplinary Space Technology Research Institute (STRI) and university-led research project proposed by NASA. HOME was proposed for the purposes of developing optimal designs of Deep Space Habitats (DSH). A DSH requires the synthesis of reliability engineering, risk analysis, and a myriad of emergent technologies which enable the development of robust, autonomous, and self-dependent habitats. By optimizing the designs of DSH, we propagate ourselves towards a future where reliable, and safe habitats for long-term deep space exploration, can be a space ;) astronauts call home.
+
+[NASA's Vision Statement](https://www.nasa.gov/sites/default/files/atoms/files/home_quad_chart.pdf)
 <br>
 
 <a name = "dsh"></a>
@@ -46,7 +48,7 @@
 <br><br>
 <img src="https://drive.google.com/uc?export=view&id=16flpdqapmh1jcujg2csmyAEqBFnsk9hw" width="320" height="180">
 <br>
-A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Owner: NASA</b>
+A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Source: NASA</b>
 
 #### Habitation Systems
 <b>Deep space habitation systems</b> are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
@@ -56,23 +58,22 @@ A conceptual depiction of a deep space habitat's interior configuration complete
 
 <a name = "dsa"></a>
 ### What is Deep Survival Analysis for Predictive Maintenance?
-#### Predictive Maintenance
-
-#### Failure Modes and Mechanisms
-
 #### Survival Analysis
+Survival Analysis (also known as time-to-event analysis) is a set of statistical methods implemented to estimate the time until an event has occurred.
 
-#### Deep Survival Analysis
+#### Predictive Maintenance
+Predictive Maintenance is an application of survival analysis, where the event of interest is the breakdown or failure of a machine or mechanical part.
 <br>
 
 <a name = "cmu"></a>
 ### CMU Specific NASA HOME Research Goals
 #### University
-* <b>Root cause analysis of faults in the Environmental Control and Life Support System (ECLSS) and the Electrical Power System (EPS).</b> We will be investigating the integration of a digital twin model with root cause analysis methods to enable context-based diagnosis of faults.
-* <b>Uncertainty quantification in digital twins.</b> For safety-critical systems, predictions of system health that account for uncertainties in a robust and efficient manner are deemed essential by NASA to safeguard against failures. Our principal objective is to develop approaches for effectively quantifying and representing uncertainties in digital twins.
-include link
+* "<b>Root cause analysis of faults in the Environmental Control and Life Support System (ECLSS) and the Electrical Power System (EPS).</b> We will be investigating the integration of a digital twin model with root cause analysis methods to enable context-based diagnosis of faults." - [CMU MOSAIC Projects](https://faculty.ce.cmu.edu/mosaic/projects/habitats-optimized-for-missions-of-exploration-nasa-home/)
+* "<b>Uncertainty quantification in digital twins.</b> For safety-critical systems, predictions of system health that account for uncertainties in a robust and efficient manner are deemed essential by NASA to safeguard against failures. Our principal objective is to develop approaches for effectively quantifying and representing uncertainties in digital twins." - [CMU MOSAIC Projects](https://faculty.ce.cmu.edu/mosaic/projects/habitats-optimized-for-missions-of-exploration-nasa-home/)
 #### Deep Survival Analysis Researchers:
-include link
+An optimal, and self-dependent DSH requires early prediction of system shutdowns and failures. Therefore, to achieve the research objectives of NASA HOME, we will be training and developing deep survival models in order to estimate the remaining useful life (RUL) of deep space habitation system components. 
+<br><br>
+[The auton-survival package](https://github.com/autonlab/auton-survival)
 <br><br>
 
 
@@ -80,6 +81,7 @@ include link
 ## Data
 <a name = "li-ion"></a>
 ### NASA's Li-ion Battery Aging Datasets
+"This data set has been collected from a custom built battery prognostics testbed at the NASA Ames Prognostics Center of Excellence (PCoE). Li-ion batteries were run through 3 different operational profiles (charge, discharge and Electrochemical Impedance Spectroscopy) at different temperatures. Discharges were carried out at different current load levels until the battery voltage fell to preset voltage thresholds. Some of these thresholds were lower than that recommended by the OEM (2.7 V) in order to induce deep discharge aging effects. Repeated charge and discharge cycles result in accelerated aging of the batteries. The experiments were stopped when the batteries reached the end-of-life (EOL) criteria of 30% fade in rated capacity (from 2 Ah to 1.4 Ah)." - [NASA's Open Data Portal](https://data.nasa.gov/dataset/Li-ion-Battery-Aging-Datasets/uj5r-zjdb)
 <br><br>
 
 
@@ -119,6 +121,11 @@ include link
 <a name = "res-ref"></a>
 ## Resources and References
 <br><br>
+* [Deep Space Habitats Overview](https://www.nasa.gov/deep-space-habitation/overview/)
+* [Habitats Optimized for Missions of Exploration (HOME)](https://www.nasa.gov/directorates/spacetech/strg/stri/stri_2018/Habitats_Optimized_for_Missions_of_Exploration_HOME/)
+* [HOME Website](https://homestri.ucdavis.edu/)
+* [NASA's Quad Chart](https://www.nasa.gov/sites/default/files/atoms/files/home_quad_chart.pdf)
+
 
 
 <a name = "collab"></a>
