@@ -50,27 +50,27 @@
 <br>
 A conceptual depiction of a deep space habitat's interior configuration complete with plant growth chambers, research stations, and a robtic helper. <b>Image Source: NASA</b>
 
-#### Habitation Systems
+#### [Habitation Systems]()
 Deep space habitation systems are systems which provide life support, environmental monitoring, crew health maintenance, fire safety, radiation protection, as well as, many other elements intended to prolong the life of both the DSH and its inhabitants during its residence in deep space. 
-#### Habitation Modules
+#### [Habitation Modules]()
 Habitation Modules are the structures which house both the aforementioned habitation systems, and future human explorers. These modules require optimal and careful construction considering a module’s obligation to protect astronauts from extreme deep space conditions.
 <br>
 
 <a name = "dsa"></a>
 ### What is Deep Survival Analysis for Predictive Maintenance?
-#### Survival Analysis
+#### [Survival Analysis]()
 Survival Analysis (also known as time-to-event analysis) is a set of statistical methods implemented to estimate the time until an event has occurred.
 
-#### Predictive Maintenance
+#### [Predictive Maintenance]()
 Predictive Maintenance is an application of survival analysis, where the event of interest is the breakdown or failure of a machine or mechanical part.
 <br>
 
 <a name = "cmu"></a>
 ### CMU Specific NASA HOME Research Goals
-#### University
+#### [University]()
 * "<b>Root cause analysis of faults in the Environmental Control and Life Support System (ECLSS) and the Electrical Power System (EPS).</b> We will be investigating the integration of a digital twin model with root cause analysis methods to enable context-based diagnosis of faults." - [CMU MOSAIC Projects](https://faculty.ce.cmu.edu/mosaic/projects/habitats-optimized-for-missions-of-exploration-nasa-home/)
 * "<b>Uncertainty quantification in digital twins.</b> For safety-critical systems, predictions of system health that account for uncertainties in a robust and efficient manner are deemed essential by NASA to safeguard against failures. Our principal objective is to develop approaches for effectively quantifying and representing uncertainties in digital twins." - [CMU MOSAIC Projects](https://faculty.ce.cmu.edu/mosaic/projects/habitats-optimized-for-missions-of-exploration-nasa-home/)
-#### Deep Survival Analysis Researchers:
+#### [Deep Survival Analysis Researchers]()
 An optimal, and self-dependent DSH requires early prediction of system shutdowns and failures. Therefore, to achieve the research objectives of NASA HOME, we will be training and developing deep survival models in order to estimate the remaining useful life (RUL) of deep space habitation system components. 
 <br><br>
 [The auton-survival package](https://github.com/autonlab/auton-survival)
