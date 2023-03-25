@@ -1,3 +1,7 @@
+""" script-owner    Utsav Khatu [utsavk28]
+    script-source   https://github.com/utsavk28/long-live-the-battery
+"""
+
 from sklearn.model_selection import train_test_split
 import os
 import numpy as np
@@ -12,17 +16,19 @@ def to_padded_numpy(l, shape):
 
 
 def preprocess_data_to_cycles():
-    path = "../../data/input/battery-data-set"
+    path = "c:/Users/archa/battery_dataset/5. Battery Data Set"
     dis = os.listdir(path)
     dis_mat = []
     battery_grp = {}
 
+    
     for i in dis:
         filtered_list = list(filter(lambda x: x.split(
             '.')[-1] == 'mat', os.listdir(f"{path}/{i}")))
         battery_grp[i.split('BatteryAgingARC')[-1][1:]
                     ] = list(map(lambda x: x.split('.')[0], filtered_list))
         dis_mat.extend(list(map(lambda x: f"{path}/{i}/{x}", filtered_list)))
+
 
     battery_grp['5_6_7_18'] = battery_grp['FY08Q4']
     del battery_grp['FY08Q4']
@@ -73,7 +79,8 @@ def preprocess_data_to_cycles():
         amb_temp = []
         for j in range(datas[i].size):
             if types[i][j] == 'discharge':
-                cap.append(datas[i][j]['Capacity'][0][0][0])
+                if len(datas[i][j]['Capacity'][0][0][0]) != 0:
+                    cap.append(float(datas[i][j]['Capacity'][0][0][0].item()))
                 amb_temp.append(ambient_temperatures[i][j])
 
         Cycles[bs[i]]['Capacity'] = np.array(cap)
@@ -81,7 +88,6 @@ def preprocess_data_to_cycles():
     Cycles = pd.DataFrame(Cycles)
 
     return Cycles
-
 
 def get_exp_based_df(exp):
     Cycles = preprocess_data_to_cycles()
