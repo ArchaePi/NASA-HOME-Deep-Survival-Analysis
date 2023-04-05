@@ -56,5 +56,3 @@ def get_battery_data(battery_list):
 
     return pd.concat(df_list).reset_index(drop=True)
 
-df = get_battery_data(['B0005', 'B0018'])
-print(df)

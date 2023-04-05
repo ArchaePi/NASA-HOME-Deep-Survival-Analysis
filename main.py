@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
-from preprocess import get_exp_based_df
 from config import *
 from auton_survival.estimators import SurvivalModel
 from auton_survival.metrics import survival_regression_metric
@@ -11,13 +10,7 @@ from auton_survival.datasets import load_dataset
 
 times, support = load_dataset('SUPPORT')
 #print(support)
-df_x, df_y = get_exp_based_df(experiments[0])
-x_tr, x_te, y_tr, y_te = train_test_split(
-        df_x, df_y, test_size=0.2, random_state=0)
-x_tr, x_val, y_tr, y_val = train_test_split(
-        x_tr, y_tr, test_size=0.5, random_state=0)
 
-print(df_x)
 
 # Define parameters for tuning the model
 param_grid = {'l2' : [1e-3, 1e-4]}

@@ -1,3 +1,6 @@
+params = ['Voltage_measured', 'Current_measured', 'Temperature_measured',
+          'Current_load', 'Voltage_load', 'Time', 'Capacity', ]
+
 
 experiments = [["B0005", "B0006", "B0007", "B0018"],
                 ["B0025", "B0026", "B0027", "B0028"],
