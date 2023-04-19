@@ -1,4 +1,4 @@
-from preprocess import get_battery_data
+from preprocess import split_data, get_battery_data
 
 import numpy as np
 import pandas as pd
@@ -20,12 +20,14 @@ def plot_feats(row=0):
 
     x, y = 0, 0
     for i in range(5):
-        axes[x, y].plot(df['Time'][0], df[params[i]][0], color = 'black')
-        axes[x, y].plot(df['Time'][55], df[params[i]][55], color = 'grey')
-        axes[x, y].plot(df['Time'][167], df[params[i]][167], color = 'red')
+        axes[x, y].plot(df['Time'][16], df[params[i]][16], color = 'cornflowerblue')
+        axes[x, y].plot(df['Time'][50], df[params[i]][50], color = 'darkorange')
+        axes[x, y].plot(df['Time'][84], df[params[i]][84], color = 'yellow')
+        axes[x, y].plot(df['Time'][117], df[params[i]][117], color = 'purple')
+        axes[x, y].plot(df['Time'][151], df[params[i]][151], color = 'yellowgreen')
 
 
-        axes[x, y].legend(['First', 'Middle', 'Last'])
+        axes[x, y].legend(['cycle 10%', 'cycle 30%', 'cycle 50%', 'cycle 70%', 'cycle 90%'])
         axes[x, y].set_xlabel('Time')
         axes[x, y].set_ylabel(params[i])
 
@@ -34,7 +36,7 @@ def plot_feats(row=0):
         else:
             y += 1
 
-    axes[1, 2].plot(cap, color = 'red')
+    axes[1, 2].plot(cap, color = 'blue')
 
     plt.subplots_adjust(left=0.1,
                     bottom=0.1,

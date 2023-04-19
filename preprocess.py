@@ -43,7 +43,8 @@ def preprocess():
             df.loc[len(df.index)] = [bat_preproc[0][row], bat_preproc[1][row], bat_preproc[2][row], bat_preproc[3][row],
                                      bat_preproc[4][row], bat_preproc[5][row], bat_preproc[6][row], bat_preproc[7][row]]
         
-    return df       
+    return df
+
 
 def get_battery_data(battery_list):
     df = preprocess()
@@ -55,4 +56,65 @@ def get_battery_data(battery_list):
         
 
     return pd.concat(df_list).reset_index(drop=True)
+
+
+def get_capacity(df):
+    cap = []
+    for i in range(len(df.index)):
+        cap.append(df['Capacity'][i][0])
+
+    return cap
+
+
+def scale_features(df):
+    columns = list(df.columns)
+    columns.remove('Battery')
+    columns.remove('Time')
+    columns.remove('Capacity')
+
+    num_rows = len(df.index)
+
+    for col in columns:
+        for i in range(num_rows):
+            data_list = list(df[col][i])
+            new_data_list = []
+            for j in range(len(data_list)):
+                math = (data_list[j] - min(data_list))/(max(data_list)-min(data_list))
+                new_data_list.append(math)
+            df[col][i] = new_data_list
+    
+    return df
+
+
+def scale_capacity(df):
+    cap = get_capacity(df)
+
+    norm_cap = []
+    for i in range(len(cap)):
+        math = (cap[i] - min(cap))/(max(cap) - min(cap))
+        norm_cap.append(math)
+
+    return norm_cap
+        
+
+# At the moment, this does not work properly
+def split_data(battery_list):
+    df = get_battery_data(battery_list)
+
+    y = []
+    for i in range(len(df)):
+        y.append(df['Capacity'][i][0])
+
+    df_y = pd.DataFrame(y, columns=['Capacity'])
+    df.drop(['Capacity'], axis=1)
+
+    df_x = scale(df)
+
+    return df_x, df_y
+
+
+
+#df = get_battery_data(['B0018'])
+#print(df)
+#print(df_y)
 
