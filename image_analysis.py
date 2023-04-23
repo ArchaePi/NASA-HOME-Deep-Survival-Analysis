@@ -5,7 +5,8 @@ from PIL import Image
 import preprocess as p
 
 df = p.get_battery_data(['B0005'])
-cap = p.scale_capacity(df)
+old_cap = p.get_capacity(df)
+cap = p.scale_data(old_cap)
 new_df = p.scale_features(df)
 
 def get_color_array(array):
@@ -44,6 +45,10 @@ def capacity_image(cap):
     img.show()
 
 def find_max(df, feature):
+    '''This function is used to find the size/length
+      of the largest array within a battery's cycles. 
+      This is for the purposes of padding the smaller
+      arrays to the same size.'''
     max_length = -1 
 
     for i in range(len(df.index)):
