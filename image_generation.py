@@ -1,11 +1,18 @@
 import numpy as np
-from numpy import asarray
-from numpy import savetxt
-import pandas as pd
 from PIL import Image
-
+from config import battery_list
 import preprocess as p
 
+# DEPRECATED
+def rescale_color_array(color_array):
+    max_val = 653
+    val = color_array[len(color_array) - 1]
+
+    if len(color_array) < max_val:
+        diff = max_val - len(color_array)
+        color_array.extend([val]*diff)
+
+    return color_array
 
 def get_color_array(array):
     '''Turns an array of integer or float values 
@@ -26,6 +33,7 @@ def get_color_array(array):
         new_value = (((array[i] - old_min) * new_range)/ old_range) + new_min
         color_array.append(int(new_value))
 
+
     return color_array
 
 def capacity_image(cap, file_name):
@@ -35,21 +43,17 @@ def capacity_image(cap, file_name):
     cap = get_color_array(cap)
     arr = np.zeros((height, width), dtype=np.uint8)
 
-    #cap_index = 0
-
     for i in range(height):
         for j in range(width):
             arr[i, j] = cap[i]
-            #cap_index += 1
 
-    img = Image.fromarray(arr)
-    img.save(file_name)
+    #img = Image.fromarray(arr)
+    #img.save(file_name)
     #img.show()
 
 def get_cycle_array(df):
     columns = list(df.columns)
     columns.remove('Battery')
-    columns.remove('Time')
     columns.remove('Capacity')
 
     cycle_arr = []
@@ -80,44 +84,36 @@ def feature_image(cycle_array, cycle_num, cap, file_name):
     img = Image.fromarray(arr)
     img.save(file_name)
     #img.show()
+    return height, width
 
 def get_grey_images():
-    battery_list = ["B0005", "B0006", "B0007", "B0018",
-                    "B0025", "B0026", "B0027", "B0028",
-                    "B0029", "B0030", "B0031", "B0032",
-                    "B0033", "B0034", "B0036",
-                    "B0038", "B0039", "B0040",
-                    "B0041", "B0042", "B0043", "B0044",
-                    "B0045", "B0046", "B0047", "B0048",
-                    "B0049", "B0050", "B0051", "B0052",
-                    "B0053", "B0054", "B0055", "B0056"]
-    
     count_per_battery = []
+    img_stats = []
     
     for battery in battery_list:
-        df = p.get_battery_data([battery])
-        old_cap = p.get_capacity(df)
-        cap = p.scale_data(old_cap)
-        new_df = p.scale_features(df)
+        battery_data = p.get_battery_data([battery])
+        cap = p.get_capacity(battery_data)
 
-        cap_file_name = '\cap_' + battery + '.png'
+        
+        cycle_array = get_cycle_array(battery_data)
+        count_per_battery.append([battery, str(len(cycle_array))])
 
-        capacity_image(cap, '.\images\grey_images\\'+ battery + cap_file_name)
-        cycle_array = get_cycle_array(new_df)
-        count_per_battery.append(len(cycle_array))
 
         for i in range(len(cycle_array)):
             file_name = '\cycle_' + str(i) +'_' + battery + '.png'
-            feature_image(cycle_array, i, cap, '.\images\grey_images\\' + battery + file_name)
-
-    data = asarray(count_per_battery)
-    savetxt('image_count.csv', data, delimiter=',')
+            height, width = feature_image(cycle_array, i, cap, 'images\\grey_images\\' + battery + file_name)
+            img_stats.append([file_name, str(height), str(width), str(cap[i])])
 
 
-
-
-
-count = get_grey_images()
+    return np.asarray(img_stats), np.asarray(count_per_battery)
 
 
 
+
+
+#stats, count = get_grey_images()
+#
+#stats = np.vstack(stats)
+#count = np.vstack(count)
+#np.savetxt('pre_scaled_stats.txt', stats, delimiter=" ", newline = "\n", fmt="%s")
+#np.savetxt('pre_scaled_counts.txt', count, delimiter=" ", newline = "\n", fmt="%s")
